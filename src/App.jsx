@@ -1,6 +1,6 @@
 /**
  * Main App Component
- * 
+ *
  * Single-page layout that renders all components:
  * - Hero section with project description
  * - UserInfo component for handle lookup
@@ -10,13 +10,13 @@
  * - RatingChart component (bonus feature)
  */
 
-import { motion } from 'framer-motion';
-import { Code2, Github, ExternalLink } from 'lucide-react';
-import UserInfo from './components/UserInfo';
-import ContestInfo from './components/ContestInfo';
-import ProblemExplorer from './components/ProblemExplorer';
-import UserComparison from './components/UserComparison';
-import RatingChart from './components/RatingChart';
+import { motion } from "framer-motion";
+import { Code2, Github, ExternalLink } from "lucide-react";
+import UserInfo from "./components/UserInfo";
+import ContestInfo from "./components/ContestInfo";
+import ProblemExplorer from "./components/ProblemExplorer";
+import UserComparison from "./components/UserComparison";
+import RatingChart from "./components/RatingChart";
 
 function App() {
   return (
@@ -30,10 +30,14 @@ function App() {
       >
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }}></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
+              backgroundSize: "40px 40px",
+            }}
+          ></div>
         </div>
 
         {/* Hero Content */}
@@ -76,9 +80,10 @@ function App() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-gray-400 text-lg max-w-2xl mx-auto mb-8"
             >
-              A modern, responsive React web app that integrates with the official Codeforces API
-              to explore user profiles, contests, and problems. Features include user lookup,
-              contest information, problem explorer, user comparison, and rating history charts.
+              A modern, responsive React web app that integrates with the
+              official Codeforces API to explore user profiles, contests, and
+              problems. Features include user lookup, contest information,
+              problem explorer, user comparison, and rating history charts.
             </motion.p>
 
             {/* Tech Stack Badges */}
@@ -88,7 +93,14 @@ function App() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="flex flex-wrap items-center justify-center gap-3 mb-8"
             >
-              {['React', 'TailwindCSS', 'Framer Motion', 'Recharts', 'Axios', 'Vite'].map((tech, index) => (
+              {[
+                "React",
+                "TailwindCSS",
+                "Framer Motion",
+                "Recharts",
+                "Axios",
+                "Vite",
+              ].map((tech, index) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-full text-sm font-semibold text-gray-300 hover:border-cf-blue transition-colors"
@@ -115,7 +127,7 @@ function App() {
                 Codeforces API Docs
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/deepakvishwakarma24/codeforces-explorer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-colors border border-gray-700"
@@ -145,7 +157,7 @@ function App() {
             <div className="w-1 h-8 bg-cf-blue rounded-full"></div>
             Core Features
           </motion.h2>
-          
+
           <div className="space-y-8">
             <UserInfo />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -166,7 +178,7 @@ function App() {
             <div className="w-1 h-8 bg-purple-500 rounded-full"></div>
             Bonus Features
           </motion.h2>
-          
+
           <div className="space-y-8">
             <UserComparison />
             <RatingChart />
@@ -181,20 +193,37 @@ function App() {
         viewport={{ once: true }}
         className="container mx-auto px-4 py-8 mt-12 border-t border-gray-800"
       >
-        <div className="text-center text-gray-400">
-          <p className="mb-2">
-            Built with ❤️ for <span className="text-cf-blue font-semibold">DJS CODESTARS 2026</span>
+        <div className="text-center mt-16 space-y-3">
+          <p className="text-gray-300 text-base font-medium">
+            Built with ❤️ by{" "}
+            <a
+              href="https://github.com/deepakvishwakarma24"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              Deepak Vishwakarma
+            </a>
           </p>
-          <p className="text-sm">
-            Powered by{' '}
+
+          <p className="text-gray-400 text-sm">
+            Codeforces Explorer • Competitive Programming Analytics Platform
+          </p>
+
+          <p className="text-gray-400 text-sm">
+            Powered by{" "}
             <a
               href="https://codeforces.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cf-blue hover:underline"
+              className="text-blue-400 hover:underline"
             >
               Codeforces API
             </a>
+          </p>
+
+          <p className="text-gray-500 text-sm mt-2">
+            © {new Date().getFullYear()} Deepak Vishwakarma
           </p>
         </div>
       </motion.footer>
