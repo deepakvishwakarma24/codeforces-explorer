@@ -4,6 +4,9 @@
 
 A modern, responsive React web application that integrates with the official Codeforces API to explore user profiles, contests, and problems. This project demonstrates proficiency in React fundamentals, API integration, state management, and modern UI/UX design.
 
+🔗 **Live Demo:** https://codeforces-explorer.vercel.app  
+🔗 **GitHub Repository:** https://github.com/deepakvishwakarma24/codeforces-explorer  
+
 ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![Vite](https://img.shields.io/badge/Vite-5.1.4-646CFF?style=for-the-badge&logo=vite)
@@ -116,9 +119,10 @@ codeforces-explorer/
 
 ### Steps
 
-1. **Clone or download the project**
-   ```bash
-   cd "c:/Users/DEEPAK/OneDrive/Desktop/Task 2 Windsurf"
+1. **Clone the repository**
+```bash
+git clone https://github.com/deepakvishwakarma24/codeforces-explorer.git
+cd codeforces-explorer
    ```
 
 2. **Install dependencies**
@@ -141,6 +145,12 @@ codeforces-explorer/
 5. **Open in browser**
    - The app will automatically open at `http://localhost:3000`
 
+
+### 🌐 Live Demo
+
+Access the deployed application here: 
+
+👉 https://codeforces-explorer.vercel.app
 ---
 
 ## 💡 Usage
@@ -315,10 +325,21 @@ This is a personal interview project, but suggestions are welcome!
 This project is created for educational purposes as part of the DJS CODESTARS 2026 interview process.
 
 ---
+## 🚀 Deployment
 
+Hosted on Vercel
+
+Auto-deploy enabled via GitHub integration
+
+👉 Live link:
+https://codeforces-explorer.vercel.app
+
+---
 ## 👨‍💻 Author
 
-Built with ❤️ for **DJS CODESTARS 2026**
+**Deepak Vishwakarma**
+
+GitHub: https://github.com/deepakvishwakarma24
 
 ---
 
@@ -333,3 +354,7 @@ Built with ❤️ for **DJS CODESTARS 2026**
 ---
 
 **Happy Coding! 🚀**
+
+**⭐ If you found this useful**
+
+Give it a ⭐ on GitHub and share!
